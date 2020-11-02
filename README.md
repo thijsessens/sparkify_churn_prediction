@@ -24,3 +24,21 @@ We use a variety of metrics to predict churn:
 3. 30d average usage
 4. averages compared to eachother 
 
+# Instructions
+You need to set up a SparkSession and have access to s3n://udacity-dsnd/sparkify/sparkify_event_data.json. See code below:
+
+```python
+# Starter code
+from pyspark.sql import SparkSession
+
+# Create spark session
+spark = SparkSession \
+    .builder \
+    .appName("Sparkify") \
+    .getOrCreate()
+
+# Read in full sparkify dataset
+event_data = "s3n://udacity-dsnd/sparkify/sparkify_event_data.json"
+df = spark.read.json(event_data)
+df.head()
+```
