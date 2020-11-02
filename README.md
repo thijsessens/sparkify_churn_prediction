@@ -6,7 +6,7 @@ This repository contains a notebook which provides a practical machine learning 
 
 We are using Spark since the dataset is 12GB and we need the power of distributed machine learning technologies to help us with the heavy lifting.
 
-# Problem statemnt
+# Problem statement
 We have several of our customers leaving. Oh no! Let's try to find a way to predict them leaving before it happens. We will try to use machine learning classification algorithms and the data available to us to get to a solution.
 
 # Data 
