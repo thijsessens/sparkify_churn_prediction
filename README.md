@@ -27,6 +27,8 @@ We use a variety of metrics to predict churn:
 4. averages compared to eachother 
 
 # Instructions
+I used a AWS EMR Cluster of Spark 2.4.6 with Network and Hardware of m5.2xlarge with ability to expand to 10cores.
+
 You need to set up a SparkSession and have access to s3n://udacity-dsnd/sparkify/sparkify_event_data.json. See code below:
 
 ```python
