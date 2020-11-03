@@ -27,9 +27,9 @@ We use a variety of metrics to predict churn:
 4. averages compared to eachother 
 
 # Instructions
-I used a AWS EMR Cluster of Spark 2.4.6 with Network and Hardware of m5.2xlarge with ability to expand to 10cores.
+I used a AWS EMR Cluster of Spark 2.4.6 with Network and Hardware of m5.xlarge with ability to expand to 7 task cores.
 
-You need to set up a SparkSession and have access to s3n://udacity-dsnd/sparkify/sparkify_event_data.json. See code below:
+In your Jupyter Notebook, You need to set up a SparkSession and have access to s3n://udacity-dsnd/sparkify/sparkify_event_data.json. See code below:
 
 ```python
 # Starter code
@@ -47,7 +47,8 @@ df = spark.read.json(event_data)
 df.head()
 ```
 
-Additionally, I had to run my jupyter notebook with nbconvert. The notebook takes too long to complete to just sit and watch the progress bar. 
+Additionally, I had to run my jupyter notebook with nbconvert. The notebook takes too long to complete to just sit and watch the progress bar.
+
 ```terminal
 jupyter nbconvert --to notebook --execute --allow-errors --ExecutePreprocessor.timeout=-1 mynotebook.ipynb
 ```
