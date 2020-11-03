@@ -49,7 +49,7 @@ df.head()
 
 Additionally, I had to run my jupyter notebook with nbconvert. The notebook takes too long to complete to just sit and watch the progress bar.
 
-```command
+```console
 $ pip install nbconvert
 $ jupyter nbconvert --to notebook --execute --allow-errors --ExecutePreprocessor.timeout=-1 mynotebook.ipynb
 ```
