@@ -1,5 +1,5 @@
 # Sparkify Churn Prediction
-Repository for Churn Prediction notebook
+Blog post on TowardsDataScience: [Churn prediction with PySpark](https://towardsdatascience.com/churn-prediction-with-pyspark-cdb7293c0850)
 
 # General Overview
 This repository contains a notebook which provides a practical machine learning implementation to predict churn using a fictional digital music streaming service called Sparkify.
